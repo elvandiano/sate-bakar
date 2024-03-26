@@ -4,6 +4,7 @@ import DashboardFinance from '../views/finance/dashboardFinance.vue'
 import ProfitAndLostStatement from '../views/finance/details/profitAndLostStatement.vue'
 import CashManagement from '../views/finance/details/cashManagement.vue'
 import AssetManagement from '../views/finance/details/assetManagement.vue'
+import DashboardMoonshot from "@/views/moonshot/DashboardMoonshot.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,6 +33,11 @@ const router = createRouter({
       path: '/dashboard-finance/details-assetmanagement',
       name: 'detail asset management',
       component: AssetManagement
+    },
+    {
+      path: '/dashboard-moonshot',
+      name: 'Moonshot',
+      component: DashboardMoonshot
     }
   ]
 })

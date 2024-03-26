@@ -16,7 +16,10 @@ import {DesktopOutlined, FileOutlined, PieChartOutlined, TeamOutlined, UserOutli
         </a-menu-item>
         <a-menu-item key="1">
           <pie-chart-outlined/>
-          <span>Moonshot</span>
+          <!--          <img src="@/assets/logoMoonshot2.svg" alt="Moonshot SVG" class="mt-2" width="20" height="20">-->
+          <span class="ml-3">
+            <RouterLink to="/dashboard-moonshot">Moonshot</RouterLink>
+          </span>
         </a-menu-item>
       </a-menu>
     </a-layout-sider>
